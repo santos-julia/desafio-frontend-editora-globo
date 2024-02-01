@@ -16,7 +16,7 @@
       <ul>
         <li><a href="#desenvolvido-com">Desenvolvido com</a></li>
         <li><a href="#funcionalidades">Funcionalidades</a></li>
-        <li><a hrf="#acessar-projeto">Acessar projeto</a></li>
+        <li><a href="#acessar-projeto">Acessar projeto</a></li>
       </ul>
     </li>
     <li>
