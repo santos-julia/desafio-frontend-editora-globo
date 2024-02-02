@@ -3,8 +3,7 @@
 
   <h3 align="center">Elenco Campeão</h3>
 
-  <a align="center" target="_ablank" href="#acessar-projeto">Acessar projeto</a>
-
+  [Palmeiras - Elenco Campeão](https://desafio-frontend-editora-globo.vercel.app/)
 
 <br />
 <br />
@@ -55,10 +54,6 @@ Os objetivos principais do projeto se concentraram na criação da interface da 
     * Jogadores que jogaram na final
 2. Modal com navegação e dados detalhados dos jogadores
 3. Gráfico de estatisticas de quantidade de gols e jogos realizados por jogador
-
-### Acessar projeto
-
-Clique no link para visualizar o resultado do projeto: [Palmeiras - Elenco Campeão](https://desafio-frontend-editora-globo.vercel.app/)
 
 <br />
 
