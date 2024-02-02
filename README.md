@@ -5,7 +5,7 @@
 
   <p align="center">
     <br />
-    <a target="_blank" href="https://desafio-frontend-editora-globo.vercel.app/">Ver demonstração</a>
+    <a href="https://desafio-frontend-editora-globo.vercel.app/">Ver demonstração</a>
   </p>
 
 <br />
