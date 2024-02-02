@@ -9,17 +9,18 @@
 <br />
 
 <details open="open">
-  <summary>Índice de conteúdo</summary>
+  <summary>Índice</summary>
   <ol>
     <li>
       <a href="#sobre">Sobre</a>
       <ul>
-        <li><a href="#construído-com">Construído com</a></li>
+        <li><a href="#desenvolvido-com">Desenvolvido com</a></li>
         <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#acessar-projeto">Acessar projeto</a></li>
       </ul>
     </li>
     <li>
-      <a href="#executando">Executando</a></li>
+      <a href="#executando">Execução</a></li>
       <ul>
         <li><a href="#pré-requisitos">Pré-requisitos</a></li>
         <li><a href="#instalacão">Instalação</a></li>
@@ -39,7 +40,7 @@ Esse projeto foi proposto como teste em um processo seletivo para Desenvolvedor 
 
 Os objetivos principais do projeto se concentraram na criação da interface da página descritiva sobre o elenco do Clube Palmeiras, vencedor da Libertadores de 2021. O desenvolvimento do projeto seguiu rigorosamente o design fornecido, com a restrição de não utilizar frameworks CSS. Além disso, os objetivos abrangeram a aplicação de tecnologias JavaScript e o uso de pré-processadores de CSS durante o processo de desenvolvimento.
 
-### Construído com
+### Desenvolvido com
 
 * [React](http://reactjs.org)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -53,9 +54,13 @@ Os objetivos principais do projeto se concentraram na criação da interface da 
 2. Modal com navegação e dados detalhados dos jogadores
 3. Gráfico de estatisticas de quantidade de gols e jogos realizados por jogador
 
+### Acessar projeto
+
+Clique no link para visualizar o resultado do projeto: [Palmeiras - Elenco Campeão](https://desafio-frontend-editora-globo.vercel.app/)
+
 <br />
 
-## Executando
+## Execução
 
 ### Pré-requisitos
 
