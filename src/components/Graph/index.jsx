@@ -1,6 +1,6 @@
 import { Container, StatusBar } from './styles';
 
-const Chart = ({ jogos, gols }) => {
+const Graph = ({ jogos, gols }) => {
     const maxJogos = 13;
     const maxGols = 6;
     const jogosPercent = ((100 * jogos) / maxJogos).toFixed(0);
@@ -20,4 +20,4 @@ const Chart = ({ jogos, gols }) => {
     );
 }
 
-export default Chart;
+export default Graph;

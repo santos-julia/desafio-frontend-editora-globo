@@ -34,6 +34,7 @@
 
 ## Sobre
 
+![Alt text](./public/image-1.png)
 <br />
 
 Esse projeto foi proposto como teste em um processo seletivo para Desenvolvedor Front-End.

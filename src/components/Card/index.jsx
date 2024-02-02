@@ -1,6 +1,6 @@
 import { Container } from './styles';
 
-import Chart from '../Chart';
+import Graph from '../Graph';
 
 const Card = ({ jogador }) => {
 
@@ -20,7 +20,7 @@ const Card = ({ jogador }) => {
                         <p>Gols</p>
                     </div>
                     <div className="status-data">
-                        <Chart jogos={jogador.jogos} gols={jogador.gols} />
+                        <Graph jogos={jogador.jogos} gols={jogador.gols} />
                     </div>
                 </div>
             </div>

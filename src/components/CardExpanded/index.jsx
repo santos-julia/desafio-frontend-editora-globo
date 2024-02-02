@@ -1,19 +1,19 @@
 import { Container } from './styles';
 
-import Chart from '../Chart';
+import VerticalChart from '../VerticalChart';
 
-const ExpandedCardMobile = ({ jogador }) => {
+const CardExpanded = ({ jogador }) => {
 
     return (
         <Container>
-            <div className='container-status'>
+            <div className="container-status">
                 <div className='jogador-img'>
                     <img src={`/jogadores/${jogador.foto}`} alt={jogador.foto} />
                 </div>
                 <div className="jogador-info">
                     <div className="jogador-container">
-                        <p>{jogador.nome}</p>
-                        <p>{`${jogador.posicao} | ${jogador.idade} anos`}</p>
+                        <p>{jogador.posicao}</p>
+                        <p>{`${jogador.idade} anos`}</p>
                     </div>
                     <div className="jogador-status">
                         <div className="status-legend">
@@ -21,12 +21,13 @@ const ExpandedCardMobile = ({ jogador }) => {
                             <p>Gols</p>
                         </div>
                         <div className="status-data">
-                            <Chart jogos={jogador.jogos} gols={jogador.gols} />
+                            <VerticalChart jogos={jogador.jogos} gols={jogador.gols} />
                         </div>
                     </div>
                 </div>
             </div>
             <div className="container-texto">
+                <p className="text-titulo">{jogador.nome}</p>
                 <div className="texto-box">
                     <p>{jogador.texto}</p>
                 </div>
@@ -36,4 +37,4 @@ const ExpandedCardMobile = ({ jogador }) => {
     );
 }
 
-export default ExpandedCardMobile;
+export default CardExpanded;
