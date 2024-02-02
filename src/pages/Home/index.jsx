@@ -80,8 +80,11 @@ const Home = () => {
   const handleSorting = value => setSorter(value);
 
   const handleOpenModal = index => {
-    setShowModal(prev => !prev);
+    console.log(jogadorIndex);
+    console.log(index);
     handleJogadorIndex(index);
+    console.log(jogadorIndex);
+    setShowModal(prev => !prev);
   };
 
   const handleJogadorIndex = index => setjogadorIndex(index);
@@ -93,7 +96,7 @@ const Home = () => {
       <Header 
         handleFilter={handleFilter} handleSorting={handleSorting} setGols={setGols} setFinal={setFinal} checkGols={checkGols} checkFinal={checkFinal} posicoes={posicoes} idades={idades}
       />
-      <section id="grid-section" className={setShowModal ? 'fade-out' : ''}>
+      <section id="grid-section">
         <div className="grid-container">
           {jogadores.map((jogador, index) => (
             <div className="card-container" key={index}>

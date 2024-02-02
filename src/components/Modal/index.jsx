@@ -12,21 +12,22 @@ import lefttArrow from '../../assets/icones/seta-esquerda.svg';
 const Modal = ({ showModal, setShowModal, index, jogadores }) => {
 
     const [activeIndex, setActiveIndex] = useState(0);
+    
+    const hasNextItemLeft = activeIndex <= 0;
+    const hasNextItemRight = activeIndex >= jogadores.length - 1;
 
     useEffect(() => {
-        setActiveIndex(0);
-        let jogadorIndex = index;
-        setActiveIndex(jogadorIndex);
+        setActiveIndex(index);
     }, [index]);
 
     const handleLeftArrowClick = () => {
-        if (!(activeIndex <= 0)) {
+        if (!hasNextItemLeft) {
             setActiveIndex(activeIndex - 1);
         }
     };
 
     const handleRightArrowClick = () => {
-        if (!(activeIndex >= jogadores.length - 1)) {
+        if (!hasNextItemRight) {
             setActiveIndex(activeIndex + 1);
         }
     };
@@ -36,7 +37,7 @@ const Modal = ({ showModal, setShowModal, index, jogadores }) => {
     
     const closeModal = () => {
         setShowModal(false);
-        window.location.reload();
+        setActiveIndex(index);
     };
 
     return (
@@ -53,7 +54,7 @@ const Modal = ({ showModal, setShowModal, index, jogadores }) => {
                             <CloseModalButton/>
                         </button>
                         <div className="steps-buttons">
-                            <button onClick={handleLeftArrowClick}>
+                            <button onClick={handleLeftArrowClick} disabled={hasNextItemLeft}>
                                 <StepButton>
                                     <div className="arrow-before">
                                         <img src={lefttArrow} alt="Arrow Left" />
@@ -61,7 +62,7 @@ const Modal = ({ showModal, setShowModal, index, jogadores }) => {
                                     <p>Anterior</p>
                                 </StepButton>
                             </button>
-                            <button onClick={handleRightArrowClick}>
+                            <button onClick={handleRightArrowClick} disabled={hasNextItemRight}>
                                 <StepButton>
                                     <div className="arrow-after">
                                         <img src={rightArrow} alt="Arrow Right" />
