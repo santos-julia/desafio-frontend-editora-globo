@@ -3,7 +3,10 @@
 
   <h3 align="center">Elenco Campeão</h3>
 
-  [Palmeiras - Elenco Campeão](https://desafio-frontend-editora-globo.vercel.app/)
+  <p align="center">
+    <br />
+    <a href="https://desafio-frontend-editora-globo.vercel.app/">Ver demonstração</a>
+  </p>
 
 <br />
 <br />
