@@ -3,7 +3,7 @@
 
   <h3 align="center">Elenco Campeão</h3>
 
-  <a href="#acessar-projeto">Acessar projeto</a>
+  <a align="center" target="_ablank" href="#acessar-projeto">Acessar projeto</a>
 
 
 <br />
