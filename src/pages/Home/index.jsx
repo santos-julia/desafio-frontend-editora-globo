@@ -18,16 +18,7 @@ const Home = () => {
   const [jogadorIndex, setjogadorIndex] = useState(0);
 
   useEffect(() => {
-    const posicoesList = [
-      'Goleiro',
-      'Zagueiro',
-      'Lateral Direito',
-      'Lateral Esquerdo',
-      'Volante',
-      'Meia',
-      'Atacante',
-      'Treinador'
-    ];
+    const posicoesList = [ 'Goleiro', 'Zagueiro', 'Lateral Direito', 'Lateral Esquerdo', 'Volante', 'Meia', 'Atacante','Treinador'];
     setPosicoes(posicoesList);
 
     const idadesList = ['0-19', '20-29', '30-39', '40-49'];
@@ -99,17 +90,10 @@ const Home = () => {
     <Main>
       <Modal showModal={showModal} setShowModal={setShowModal} index={jogadorIndex} jogadores={jogadores} />
       <Banner />
-      <Header
-        handleFilter={handleFilter}
-        handleSorting={handleSorting}
-        setGols={setGols}
-        setFinal={setFinal}
-        checkGols={checkGols}
-        checkFinal={checkFinal}
-        posicoes={posicoes}
-        idades={idades}
+      <Header 
+        handleFilter={handleFilter} handleSorting={handleSorting} setGols={setGols} setFinal={setFinal} checkGols={checkGols} checkFinal={checkFinal} posicoes={posicoes} idades={idades}
       />
-      <section id="grid-section">
+      <section id="grid-section" className={setShowModal ? 'fade-out' : ''}>
         <div className="grid-container">
           {jogadores.map((jogador, index) => (
             <div className="card-container" key={index}>

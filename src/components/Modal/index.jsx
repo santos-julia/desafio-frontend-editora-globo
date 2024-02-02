@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Container, CloseModalButton, StepButton } from './styles';
 
-import ExpandedCard from '../ExpandedCard';
-import ExpandedCardMobile from '../ExpandedCardMobile';
+import CardExpanded from '../CardExpanded';
+import CardExpandedMobile from '../CardExpandedMobile';
 
 import useWindowSize from '../../Hooks/useWindowSize';
 
@@ -33,19 +33,24 @@ const Modal = ({ showModal, setShowModal, index, jogadores }) => {
 
     const windowSize = useWindowSize();
     console.log(windowSize.width);
+    
+    const closeModal = () => {
+        setShowModal(false);
+        window.location.reload();
+    };
 
     return (
         <>
             {showModal ? (
-                <Container>
+                <Container className={showModal ? 'fade-in' : ''}>
                     <div className="expCard-container">
                         {windowSize.width > 600 ? (
-                            <ExpandedCard jogador={jogadores[activeIndex]} />
+                            <CardExpanded jogador={jogadores[activeIndex]} />
                         ) : (
-                            <ExpandedCardMobile jogador={jogadores[activeIndex]} />
+                            <CardExpandedMobile jogador={jogadores[activeIndex]} />
                         )}
-                        <button className="close-buttom" onClick={() => setShowModal(prev => !prev, setActiveIndex(0))}>
-                            <CloseModalButton />
+                        <button className="close-buttom" onClick={closeModal}>
+                            <CloseModalButton/>
                         </button>
                         <div className="steps-buttons">
                             <button onClick={handleLeftArrowClick}>

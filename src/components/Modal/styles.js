@@ -13,10 +13,34 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 10;
-    transition: 0.8;
-    opacity: 1;
     
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 
+    &.fade-in {
+        animation: fadeIn .5s;
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+      }
+  
+      &.fade-out {
+          animation: fadeOut .5s;
+      }
+
+    
     .expCard-container {
         position: relative;
 
@@ -25,7 +49,7 @@ export const Container = styled.div`
             top: 6px;
             right: 6px;
             border-radius: 50%;
-            cursor: pointer;
+            cursor: pointer;s
         }
 
         .steps-buttons {
@@ -36,6 +60,7 @@ export const Container = styled.div`
             position: absolute;
             bottom: 16px;
             left: 68px;
+
 
             button {
                 border-radius: 14px;
@@ -75,6 +100,7 @@ export const StepButton = styled.div`
         background-color: #B4DDC1;
         border-radius: 14px;
         position: relative;
+        
 
         &:hover {
             outline: 2px solid #006437;

@@ -8,6 +8,7 @@ const backgroundColor = '#E0EFE5';
 const primaryColor = '#006437';
 
 export const Main = styled.main`
+
   #menu {
     width: 100%;
     height: 80px;
@@ -42,6 +43,7 @@ export const Main = styled.main`
         }
       }
     }
+    
 
     @media screen and (max-width: 900px) {
 
@@ -175,7 +177,7 @@ export const Main = styled.main`
         border-radius: 50%;
         cursor: pointer;
       }
-    }
+    }    
 
     @media screen and (max-width: 1200px) {
         .grid-container {
