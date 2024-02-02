@@ -4,7 +4,6 @@ import setaBaixoIcon from '../../assets/icones/seta-baixo.svg';
 import saibaMaisIcon from '../../assets/icones/saiba-mais.svg';
 import saibaMaisHoverIcon from '../../assets/icones/saiba-mais-hover.svg';
 
-const mainBorderColor = '#006437';
 const backgroundColor = '#E0EFE5';
 const primaryColor = '#006437';
 
@@ -12,7 +11,6 @@ export const Main = styled.main`
   #menu {
     width: 100%;
     height: 80px;
-    border-bottom: 12px solid ${mainBorderColor};
     display: flex;
     justify-content: center;
     align-items: center;
